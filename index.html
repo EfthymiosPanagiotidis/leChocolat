@@ -64,8 +64,8 @@
 
     <header class="jumbotron">
       <div class="container">
-        <div class="row row-header">
-          <div class="col-12 col-sm-8">
+        <div class="row row-header align-items-center">
+          <div class="col-12 col-sm-6">
             <h1>Le Chocolat</h1>
             <p>
               We combine experience with creativity to create innovative tastes
@@ -73,9 +73,12 @@
               in the chocolate world!
             </p>
           </div>
-          <div class="col col-sm">
+          <div class="col-12 col-sm-3">
             <img src="images/logo.png" class="img-fluid" />
           </div>
+          <div class="col-12 col-sm-3">
+            <a role="button" class="btn btn-sm btn-warning" href="#reserveBasket">Reserve your baskets</a>
+        </div>
         </div>
       </div>
     </header>
@@ -149,6 +152,126 @@
                 Vasilis is well informed of all the current trends in pastry and
                 contributes his innovative ideas in our products.
               </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="reserveBasket" class="row row-content justify-content-center align-items-center">
+        <div class="col-12 col-sm-8">
+          <div class="card border-default">
+            <h3 class="card-header bg-warning text-white">
+              Reserve your baskets
+            </h3>
+            <div class="card-body">
+              <form>
+                <div class="form-group row">
+                  <label class="col col-sm-3 col-form-label"
+                    >Number of baskets</label
+                  >
+                  <div class="col col-sm">
+                    <div class="form-check form-check-inline">
+                      <input
+                        class="form-check-input"
+                        type="radio"
+                        name="numberOfBaskets"
+                        id="one"
+                        value="one"
+                      />
+                      <label class="form-check-label" for="one">1</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                      <input
+                        class="form-check-input"
+                        type="radio"
+                        name="numberOfBaskets"
+                        id="two"
+                        value="two"
+                      />
+                      <label class="form-check-label" for="two">2</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                      <input
+                        class="form-check-input"
+                        type="radio"
+                        name="numberOfBaskets"
+                        id="three"
+                        value="three"
+                      />
+                      <label class="form-check-label" for="three">3</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                      <input
+                        class="form-check-input"
+                        type="radio"
+                        name="numberOfBaskets"
+                        id="four"
+                        value="four"
+                      />
+                      <label class="form-check-label" for="four">4</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                      <input
+                        class="form-check-input"
+                        type="radio"
+                        name="numberOfBaskets"
+                        id="five"
+                        value="five"
+                      />
+                      <label class="form-check-label" for="five">5</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                      <input
+                        class="form-check-input"
+                        type="radio"
+                        name="numberOfBaskets"
+                        id="six"
+                        value="six"
+                      />
+                      <label class="form-check-label" for="six">6</label>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="form-group row">
+                  <label for="dateAndTime" class="col col-sm-3 col-form-label"
+                    >Date and Time</label
+                  >
+                  <div class="input-group col-12 col-sm-4">
+                    <div class="input-group-prepend">
+                      <span class="input-group-text" id="date"
+                        ><i class="fa fa-calendar" aria-hidden="true"></i>
+                      </span>
+                    </div>
+                    <input
+                      type="date"
+                      class="form-control"
+                      placeholder="Date"
+                      id="date'"
+                    />
+                  </div>
+
+                  <div class="input-group col-12 col-sm-4">
+                    <div class="input-group-prepend">
+                      <span class="input-group-text" id="time"
+                        ><i class="fa fa-clock-o" aria-hidden="true"></i>
+                      </span>
+                    </div>
+                    <input
+                      type="time"
+                      class="form-control"
+                      placeholder="Time"
+                      id="time'"
+                    />
+                  </div>
+                </div>
+                <button
+                  type="submit"
+                  class="btn btn-primary btn-sm col-sm-offset-2"
+                >
+                  Reserve
+                </button>
+              </form>
             </div>
           </div>
         </div>
