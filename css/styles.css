@@ -65,3 +65,40 @@ tr:hover {
   bottom: 0px;
   z-index: +1;
 }
+nav > .nav.nav-tabs {
+  border: none;
+  color: #fff;
+  background: #dbb08d;
+  border-radius: 0;
+}
+nav > div a.nav-item.nav-link {
+  border: none;
+  padding: 18px 25px;
+  color: #fff;
+  background: #dbb08d;
+  border-radius: 0;
+}
+nav > div a.nav-item.nav-link.active {
+  border: none;
+  padding: 18px 25px;
+  color: #fff;
+  background: #6e3f19;
+  border-radius: 0;
+}
+#nav-tabContent {
+  background: #fdfdfd;
+  line-height: 25px;
+  border: 1px solid #ddd;
+  border-top: 5px solid #6e3f19;
+  border-bottom: 5px solid #6e3f19;
+  padding: 30px 25px;
+}
+
+nav > div a.nav-item.nav-link:hover,
+nav > div a.nav-item.nav-link:focus {
+  border: none;
+  background: #6e3f19;
+  color: #fff;
+  border-radius: 0;
+  transition: background 0.2s linear;
+}

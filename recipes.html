@@ -1,0 +1,541 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags always come first -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <!-- Bootstrap CSS -->
+    <!-- build:css css/main.css -->
+    <link
+      rel="stylesheet"
+      href="node_modules/bootstrap/dist/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="node_modules/font-awesome/css/font-awesome.min.css"
+    />
+    <link href="css/styles.css" rel="stylesheet" />
+    <!-- endbuild -->
+    <title>Le Chocolat</title>
+  </head>
+
+  <body>
+    <nav class="navbar navbar-expand-md navbar-light bg-light fixed-top">
+      <div class="container">
+        <a class="navbar-brand" href="./index.html"
+          ><img src="images/logo.png" height="40" width="54"
+        /></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#Navbar"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="Navbar">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="./index.html"
+                ><span class="fa fa-home fa-lg"></span> Home</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./aboutus.html"
+                ><span class="fa fa-info fa-lg"></span> About</a
+              >
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link" href="#"
+                ><span class="fa fa-list fa-lg"></span> Recipes</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./contactus.html"
+                ><span class="fa fa-address-card fa-lg"></span> Contact</a
+              >
+            </li>
+          </ul>
+          <span class="navbar-text">
+            <a data-toggle="modal" href="#loginModal">
+              <span class="fa fa-sign-in"></span> Login
+            </a>
+          </span>
+        </div>
+      </div>
+    </nav>
+
+    <div id="loginModal" class="modal fade" role="dialog">
+      <div class="modal-dialog modal-lg" role="content">
+        <!-- Modal content-->
+        <div class="modal-content">
+          <div class="modal-header">
+            <h4 class="modal-title">Login</h4>
+            <button type="button" class="close" data-dismiss="modal">
+              &times
+            </button>
+          </div>
+          <div class="modal-body">
+            <form class="form-inline">
+              <div class="form-group">
+                <label class="sr-only" for="exampleInputEmail3"
+                  >Email address
+                </label>
+                <input
+                  type="email"
+                  class="form-control form-control-sm mr-1"
+                  id="exampleInputEmail3"
+                  placeholder="Enter email"
+                />
+              </div>
+              <div class="form-group">
+                <label class="sr-only" for="exampleInputPassword3">
+                  Password
+                </label>
+                <input
+                  type="password"
+                  class="form-control form-control-sm mr-1"
+                  id="exampleInputPassword3"
+                  placeholder="Password"
+                />
+              </div>
+              <div class="form-check">
+                <label class="form-check-label">
+                  <input class="form-check-input" type="checkbox" />
+                  Remember me
+                </label>
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-default btn-sm"
+              data-dismiss="modal"
+            >
+              Cancel
+            </button>
+            <button type="submit" class="btn btn-primary btn-sm">
+              Sign in
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <header class="jumbotron">
+      <div class="container">
+        <div class="row row-header">
+          <div class="col-12 col-sm-8">
+            <h1>Le Chocolat</h1>
+            <p>
+              We combine experience with creativity to create innovative tastes
+              based on classic chocolate recipes. Our creations will travel you
+              in the chocolate world!
+            </p>
+          </div>
+          <div class="col col-sm">
+            <img src="images/logo.png" class="img-fluid" />
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <nav aria-label="breadcrumb">
+      <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a href="./index.html">Home</a></li>
+        <li class="breadcrumb-item active" aria-current="page">Recipes</li>
+      </ol>
+    </nav>
+
+    <div class="container">
+      <div class="row row-header">
+        <div class="col-12">
+          <h3>Recipes</h3>
+          <hr />
+        </div>
+      </div>
+
+      <div class="row row-content">
+        <div class="col-12">
+          <nav>
+            <div class="nav nav-tabs nav-fill" id="nav-tab" role="tablist">
+              <a
+                class="nav-item nav-link active col-12 col-sm-3"
+                id="nav-home-tab"
+                data-toggle="tab"
+                href="#nav-home"
+                role="tab"
+                aria-controls="nav-home"
+                aria-selected="true"
+                >Brownies</a
+              >
+              <a
+                class="nav-item nav-link col-12 col-sm-3"
+                id="nav-profile-tab"
+                data-toggle="tab"
+                href="#nav-profile"
+                role="tab"
+                aria-controls="nav-profile"
+                aria-selected="false"
+                >Cake</a
+              >
+              <a
+                class="nav-item nav-link col-12 col-sm-3"
+                id="nav-contact-tab"
+                data-toggle="tab"
+                href="#nav-contact"
+                role="tab"
+                aria-controls="nav-contact"
+                aria-selected="false"
+                >Mousse</a
+              >
+              <a
+                class="nav-item nav-link col-12 col-sm-3"
+                id="nav-about-tab"
+                data-toggle="tab"
+                href="#nav-about"
+                role="tab"
+                aria-controls="nav-about"
+                aria-selected="false"
+                >Souffle</a
+              >
+            </div>
+          </nav>
+          <div class="tab-content py-3 px-3 px-sm-0" id="nav-tabContent">
+            <div
+              class="tab-pane fade show active"
+              id="nav-home"
+              role="tabpanel"
+              aria-labelledby="nav-home-tab"
+            >
+              <div class="media">
+                <img
+                  class="col-12 col-sm-6 d-flex mr-3 img-thumbnail align-self-center"
+                  src="images/brownie.jpg"
+                  alt="Brownies"
+                />
+                <div class="media-body d-none d-sm-block">
+                  <h2 class="mt-0">
+                    Ingredients
+                  </h2>
+                  <ul>
+                    <li>1/2 cup butter</li>
+                    <li>1 cup white sugar</li>
+                    <li>2 eggs</li>
+                    <li>1 teaspoon vanilla extract</li>
+                    <li>1/3 cup unsweetened cocoa powder</li>
+                    <li>1/2 cup all-purpose flour</li>
+                    <li>1/4 teaspoon salt</li>
+                    <li>1/4 teaspoon baking powder</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="d-block d-sm-none">
+                <h2 class="mt-0">
+                  Ingredients
+                </h2>
+                <ul>
+                  <li>1/2 cup butter</li>
+                  <li>1 cup white sugar</li>
+                  <li>2 eggs</li>
+                  <li>1 teaspoon vanilla extract</li>
+                  <li>1/3 cup unsweetened cocoa powder</li>
+                  <li>1/2 cup all-purpose flour</li>
+                  <li>1/4 teaspoon salt</li>
+                  <li>1/4 teaspoon baking powder</li>
+                </ul>
+              </div>
+              <h2 class="mt-0">
+                Directions
+              </h2>
+              <p>
+                Preheat oven to 350 degrees F (175 degrees C). Grease and flour
+                an 8-inch square pan. In a large saucepan, melt 1/2 cup butter.
+                Remove from heat, and stir in sugar, eggs, and 1 teaspoon
+                vanilla. Beat in 1/3 cup cocoa, 1/2 cup flour, salt, and baking
+                powder. Spread batter into prepared pan. Bake in preheated oven
+                for 25 to 30 minutes. Do not overcook.
+              </p>
+            </div>
+            <div
+              class="tab-pane fade"
+              id="nav-profile"
+              role="tabpanel"
+              aria-labelledby="nav-profile-tab"
+            >
+              <div class="media">
+                <img
+                  class="col-12 col-sm-6 d-flex mr-3 img-thumbnail align-self-center"
+                  src="images/cake.jpg"
+                  alt="Cake"
+                />
+                <div class="media-body d-none d-sm-block">
+                  <h2 class="mt-0">
+                    Ingredients
+                  </h2>
+                  <ul>
+                    <li>4 (1 ounce) squares semisweet chocolate, chopped</li>
+                    <li>1/2 cup butter</li>
+                    <li>3/4 cup white sugar</li>
+                    <li>1/2 cup cocoa powder</li>
+                    <li>3 eggs, beaten</li>
+                    <li>1 teaspoon vanilla extract</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="d-block d-sm-none">
+                <h2 class="mt-0">
+                  Ingredients
+                </h2>
+                <ul>
+                  <li>4 (1 ounce) squares semisweet chocolate, chopped</li>
+                  <li>1/2 cup butter</li>
+                  <li>3/4 cup white sugar</li>
+                  <li>1/2 cup cocoa powder</li>
+                  <li>3 eggs, beaten</li>
+                  <li>1 teaspoon vanilla extract</li>
+                </ul>
+              </div>
+              <h2 class="mt-0">
+                Directions
+              </h2>
+              <p>
+                Preheat oven to 300 degrees F (150 degrees C). Grease an 8 inch
+                round cake pan, and dust with cocoa powder. In the top of a
+                double boiler over lightly simmering water, melt chocolate and
+                butter. Remove from heat, and stir in sugar, cocoa powder, eggs,
+                and vanilla. Pour into prepared pan. Bake in preheated oven for
+                30 minutes. Let cool in pan for 10 minutes, then turn out onto a
+                wire rack and cool completely. Slices can also be reheated for
+                20 to 30 seconds in the microwave before serving.
+              </p>
+            </div>
+            <div
+              class="tab-pane fade"
+              id="nav-contact"
+              role="tabpanel"
+              aria-labelledby="nav-contact-tab"
+            >
+              <div class="media">
+                <img
+                  class="col-12 col-sm-6 d-flex mr-3 img-thumbnail align-self-center"
+                  src="images/mousse.jpg"
+                  alt="Mousse"
+                />
+                <div class="media-body d-none d-sm-block">
+                  <h2 class="mt-0">
+                    Ingredients
+                  </h2>
+                  <ul>
+                    <li>9 ounces Bittersweet Baking Chocolate Bar-Each HER</li>
+                    <li>3/4 cup Kraft Marshmallows-Miniature KFT</li>
+                    <li>4 Egg, whole, raw, fresh</li>
+                    <li>1/2 pint Cream, fluid, heavy whipping</li>
+                    <li>1 dash peppermint extract</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="d-block d-sm-none">
+                <h2 class="mt-0">
+                  Ingredients
+                </h2>
+                <ul>
+                  <li>9 ounces Bittersweet Baking Chocolate Bar-Each HER</li>
+                  <li>3/4 cup Kraft Marshmallows-Miniature KFT</li>
+                  <li>4 Egg, whole, raw, fresh</li>
+                  <li>1/2 pint Cream, fluid, heavy whipping</li>
+                  <li>1 dash peppermint extract</li>
+                </ul>
+              </div>
+              <h2 class="mt-0">
+                Directions
+              </h2>
+              <p>
+                In a microwave-safe bowl, microwave chocolate until melted. Stir
+                occasionally until chocolate is smooth. Stir marshmallows into
+                hot chocolate until melted. Set aside. Whip egg whites until
+                stiff peaks form. Whip cream until soft peaks form. Stir egg
+                yolks into slightly cooled chocolate mixture. Fold in egg whites
+                and whipped cream. Stir in peppermint extract. Chill 2 to 3
+                hours before serving.
+              </p>
+            </div>
+            <div
+              class="tab-pane fade"
+              id="nav-about"
+              role="tabpanel"
+              aria-labelledby="nav-about-tab"
+            >
+              <div class="media">
+                <img
+                  class="col-12 col-sm-6 d-flex mr-3 img-thumbnail align-self-center"
+                  src="images/souffle.jpg"
+                  alt="Souffle"
+                />
+                <div class="media-body d-none d-sm-block">
+                  <h2 class="mt-0">
+                    Ingredients
+                  </h2>
+                  <ul>
+                    <li>1 teaspoon melted butter, or as needed</li>
+                    <li>2 tablespoons white sugar</li>
+                    <li>2 ounces 70% dark chocolate, broken into pieces</li>
+                    <li>1 tablespoon butter</li>
+                    <li>1 tablespoon all-purpose flour</li>
+                    <li>4 1/3 tablespoons cold milk</li>
+                    <li>1 pinch salt</li>
+                    <li>1 pinch cayenne pepper</li>
+                    <li>1 large egg yolk</li>
+                    <li>2 large egg whites</li>
+                    <li>1 pinch cream of tartar</li>
+                    <li>1 tablespoon white sugar, divided</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="d-block d-sm-none">
+                <h2 class="mt-0">
+                  Ingredients
+                </h2>
+                <ul>
+                  <li>1 teaspoon melted butter, or as needed</li>
+                  <li>2 tablespoons white sugar</li>
+                  <li>2 ounces 70% dark chocolate, broken into pieces</li>
+                  <li>1 tablespoon butter</li>
+                  <li>1 tablespoon all-purpose flour</li>
+                  <li>4 1/3 tablespoons cold milk</li>
+                  <li>1 pinch salt</li>
+                  <li>1 pinch cayenne pepper</li>
+                  <li>1 large egg yolk</li>
+                  <li>2 large egg whites</li>
+                  <li>1 pinch cream of tartar</li>
+                  <li>1 tablespoon white sugar, divided</li>
+                </ul>
+              </div>
+              <h2 class="mt-0">
+                Directions
+              </h2>
+              <p>
+                Preheat oven to 375 degrees F (190 degrees C). Line a rimmed
+                baking sheet with parchment paper. Brush bottom and sides of 2
+                (5-ounce) ramekins lightly with 1 teaspoon melted butter; cover
+                bottom and sides right up to the rim. Add 1 tablespoon white
+                sugar to ramekins. Rotate ramekins until sugar coats all
+                surfaces. Pour off extra sugar. Place chocolate pieces in a
+                metal mixing bowl. Place bowl over a pan of about 3 cups hot
+                water over low heat. Do not let water boil or come to a simmer.
+                Melt 1 tablespoon butter in a skillet over medium heat. Sprinkle
+                in flour. Whisk until flour is incorporated into butter and
+                mixture thickens, about 1 minute. Reduce heat to low. Whisk in
+                cold milk until mixture becomes smooth and thickens, 2 or 3
+                minutes. Remove skillet from heat. Transfer mixture to bowl with
+                melted chocolate. Add salt and very small pinch of cayenne
+                pepper. Mix together thoroughly. Add egg yolk and mix to
+                combine. Leave bowl above the hot (not simmering) water to keep
+                chocolate warm while you whip the egg whites. Place 2 egg whites
+                in a mixing bowl; add cream of tartar. Whisk until mixture
+                begins to thicken and a drizzle from the whisk stays on the
+                surface about 1 second before disappearing into the mix, 2 or 3
+                minutes. Add 1/3 of sugar and whisk in. Whisk in a bit more
+                sugar about 15 seconds; whisk in the rest of the sugar. Continue
+                whisking until mixture is about as thick as shaving cream and
+                holds soft peaks, 3 to 5 minutes. Transfer a little less than
+                half of egg whites to chocolate. Mix until egg whites are
+                thoroughly incorporated into the chocolate, 1 or 2 minutes. Add
+                the rest of the egg whites; gently fold into the chocolate with
+                a spatula, lifting from the bottom and folding over. Stop mixing
+                after the egg white disappears. Divide mixture between 2
+                prepared ramekins. Place ramekins on prepared baking sheet. Bake
+                in preheated oven until scuffles are puffed and have risen above
+                the top of the rims, 12 to 15 minutes.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-5 offset-1 col-sm-2">
+            <h5>Links</h5>
+            <ul class="list-unstyled">
+              <li><a href="./index.html">Home</a></li>
+              <li><a href="#">About</a></li>
+              <li><a href="./recipes.html">Recipes</a></li>
+              <li><a href="./contactus.html">Contact</a></li>
+            </ul>
+          </div>
+          <div class="col-6 col-sm-5">
+            <h5>Our Address</h5>
+            <address>
+              121, Clear Wave Road<br />
+              Clear Wave Road, Aloha<br />
+              HAWAII<br />
+              <i class="fa fa-phone fa-lg"></i>: +987 6543 2100 <br />
+              <i class="fa fa-fax fa-lg"></i>: +987 6543 2101 <br />
+              <i class="fa fa-envelope fa-lg"></i>:
+              <a href="mailto: chocolat@nomail.net"> chocolat@nomail.net </a>
+            </address>
+          </div>
+          <div class="col-sm align-self-center">
+            <div style="text-align: center;">
+              <a
+                class="btn btn-social-icon btn-google-plus"
+                href="http://google.com/+"
+              >
+                <i class="fa fa-google-plus"></i
+              ></a>
+              <a
+                class="btn btn-social-icon btn-facebook"
+                href="http://www.facebook.com/profile.php?id="
+              >
+                <i class="fa fa-facebook"></i
+              ></a>
+              <a
+                class="btn btn-social-icon btn-linkedin"
+                href="http://www.linkedin.com/in/"
+              >
+                <i class="fa fa-linkedin"></i
+              ></a>
+              <a
+                class="btn btn-social-icon btn-twitter"
+                href="http://twitter.com/"
+              >
+                <i class="fa fa-twitter"></i
+              ></a>
+              <a
+                class="btn btn-social-icon btn-youtube"
+                href="http://youtube.com/"
+              >
+                <i class="fa fa-youtube"></i
+              ></a>
+              <a class="btn btn-social-icon" href="mailto:">
+                <i class="fa fa-envelope-o"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+        <div class="row justify-content-center">
+          <div class="col-auto">
+            <p>&copy; Copyright 2018 Le Chocolat</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- jQuery first, then Tether, then Bootstrap JS. -->
+    <!-- build:js js/main.js -->
+    <script src="node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="node_modules/tether/dist/js/tether.min.js"></script>
+    <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="js/scripts.js"></script>
+    <!-- endbuild -->
+  </body>
+</html>
